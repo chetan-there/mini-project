@@ -1,0 +1,63 @@
+###############################
+# Eclipse & IDE specific files
+###############################
+.classpath
+.project
+.settings/
+.loadpath
+
+###############################
+# Java build output
+###############################
+bin/
+target/
+build/
+
+###############################
+# Maven files
+###############################
+.mvn/
+dependency-reduced-pom.xml
+
+###############################
+# Logs & temp files
+###############################
+*.log
+*.tmp
+*.swp
+*.swo
+*.cache
+
+###############################
+# OS-specific files
+###############################
+.DS_Store
+Thumbs.db
+
+###############################
+# Java files
+###############################
+*.class
+*.jar
+*.war
+*.ear
+
+###############################
+# Tomcat / server working dirs
+###############################
+/Servers/
+/.metadata/
+/.wtpmodules/
+/.recommenders/
+
+###############################
+# JetBrains IDE (If you open in IntelliJ)
+###############################
+.idea/
+*.iml
+
+###############################
+# Node / frontend (if used)
+###############################
+node_modules/
+dist/

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+EMedical
+├── src
+│   ├── com.emedical.dao
+│   │   ├── UserDAO.java
+│   │   ├── PatientDAO.java
+│   │   ├── MedicineDAO.java
+│   │   ├── StockDAO.java
+│   │   ├── PrescriptionDAO.java
+│   │   ├── DispensingDAO.java
+│   │   ├── BillDAO.java
+│   │   ├── AuditLogDAO.java
+│   ├── com.emedical.service
+│   │   ├── UserService.java
+│   │   ├── PatientService.java
+│   │   ├── MedicineService.java
+│   │   ├── StockService.java
+│   │   ├── PrescriptionService.java
+│   │   ├── DispensingService.java
+│   │   ├── BillService.java
+│   │   ├── AuditLogService.java
+│   │   ├── ReportService.java
+│   ├── com.emedical.util
+│   │   ├── DBConnection.java
+│   │   ├── BCryptUtil.java
+│   ├── com.emedical.servlet
+│   │   ├── LoginServlet.java
+│   │   ├── LogoutServlet.java
+│   │   ├── PatientServlet.java
+│   │   ├── PrescriptionServlet.java
+│   │   ├── DispensingServlet.java
+│   │   ├── StockServlet.java
+│   │   ├── BillServlet.java
+│   │   ├── ReportServlet.java
+│   │   ├── AuditLogServlet.java
+├── WebContent
+│   ├── WEB-INF
+│   │   ├── web.xml
+│   │   ├── lib (add JARs: mysql-connector-java-8.0.33.jar, commons-dbcp2-2.9.0.jar, commons-pool2-2.10.0.jar, jbcrypt-0.4.jar)
+│   ├── jsp
+│   │   ├── login.jsp
+│   │   ├── dashboard.jsp
+│   │   ├── patients.jsp
+│   │   ├── add_patient.jsp
+│   │   ├── prescriptions.jsp
+│   │   ├── add_prescription.jsp
+│   │   ├── dispensing.jsp
+│   │   ├── stock.jsp
+│   │   ├── bills.jsp
+│   │   ├── reports.jsp
+│   │   ├── audit_logs.jsp
+├── META-INF
+└── build
+</body>
+</html>
