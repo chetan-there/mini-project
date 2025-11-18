@@ -7,11 +7,13 @@ import com.emedical.service.AuditLogService;
 import com.emedical.service.UserService;
 
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
+@WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
     private UserService userService = new UserService();
     private AuditLogService auditService = new AuditLogService();

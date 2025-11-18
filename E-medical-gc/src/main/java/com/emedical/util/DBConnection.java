@@ -1,26 +1,24 @@
 package com.emedical.util;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.SQLException;
-import javax.sql.DataSource;
-import org.apache.commons.dbcp2.BasicDataSource;
 
 public class DBConnection {
-    private static DataSource dataSource;
+
+    private static final String URL = "jdbc:mysql://localhost:3306/emedical?useSSL=false&serverTimezone=UTC";
+    private static final String USER = "root";
+    private static final String PASS = "root";
 
     static {
-        BasicDataSource ds = new BasicDataSource();
-        ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        ds.setUrl("jdbc:mysql://localhost:3306/emedical?useSSL=false&serverTimezone=UTC");
-        ds.setUsername("root");
-        ds.setPassword("root");
-        ds.setMinIdle(5);
-        ds.setMaxIdle(10);
-        ds.setMaxOpenPreparedStatements(100);
-        dataSource = ds;
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public static Connection getConnection() throws SQLException {
-        return dataSource.getConnection();
+        return DriverManager.getConnection(URL, USER, PASS);
     }
 }
