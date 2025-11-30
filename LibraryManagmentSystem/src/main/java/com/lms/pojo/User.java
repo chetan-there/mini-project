@@ -13,6 +13,7 @@ public class User {
 	private String phoneNo;
 	private String address;
 	private Date createdAt;
+	
 	public long getUserId() {
 		return userId;
 	}
@@ -67,8 +68,5 @@ public class User {
 	public void setCreatedAt(Date createdAt) {
 		this.createdAt = createdAt;
 	}
-	
-
-	
 
 }

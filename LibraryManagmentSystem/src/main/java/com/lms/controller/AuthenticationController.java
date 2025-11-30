@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import com.lms.pojo.User;
 import com.lms.service.UserService;
-import com.lms.serviceimpl.UserServiceImpl;
+import com.lms.serviceImpl.UserServiceImpl;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
